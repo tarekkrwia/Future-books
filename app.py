@@ -170,7 +170,8 @@ elif st.session_state.step == 2:
             else:
                 try:
                     genai.configure(api_key=api_key)
-                    model = genai.GenerativeModel('gemini-1.5-flash')
+                    # تم تعديل اسم الموديل هنا
+                    model = genai.GenerativeModel('gemini-pro')
                     
                     with st.spinner("جاري تحليل الأسئلة وتنسيقها... هذا قد يستغرق لحظات"):
                         prompt = f"""
